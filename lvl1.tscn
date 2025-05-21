@@ -1,0 +1,131 @@
+[gd_scene load_steps=16 format=3 uid="uid://d1bg4nv6tx0iy"]
+
+[ext_resource type="Texture2D" uid="uid://dfd3naw2lmwer" path="res://1. Parallax/1_ Trees Background.png" id="1_vhjmk"]
+[ext_resource type="Texture2D" uid="uid://derne5w03vkwx" path="res://1. Parallax/3_ Trees.png" id="2_hppyo"]
+[ext_resource type="Texture2D" uid="uid://wcyyxrgmiy32" path="res://1. Parallax/5_ Floor Platform.png" id="3_t5y7p"]
+[ext_resource type="Texture2D" uid="uid://dnb6ex56xoxc7" path="res://BookPack/cuaadro negro.png" id="4_ok8r0"]
+[ext_resource type="Texture2D" uid="uid://co1oju2axl1uu" path="res://BookPack/books_byBatuhan2.png" id="4_wg0iv"]
+[ext_resource type="Texture2D" uid="uid://c76s6ekai0u3o" path="res://BookPack/Enemi .png" id="6_audra"]
+[ext_resource type="Texture2D" uid="uid://c7y4jh2jn5ctl" path="res://CharacterAnimations/Idle.png" id="7_x7kom"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_audra"]
+atlas = ExtResource("6_audra")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7kom"]
+atlas = ExtResource("6_audra")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qoovb"]
+atlas = ExtResource("6_audra")
+region = Rect2(192, 33, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1w0mb"]
+atlas = ExtResource("6_audra")
+region = Rect2(224, 33, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_imcy2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_audra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7kom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qoovb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1w0mb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_audra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7kom")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imcy2"]
+atlas = ExtResource("7_x7kom")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7ero"]
+atlas = ExtResource("7_x7kom")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f7a5t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imcy2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7ero")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}]
+
+[node name="lvl1" type="Node2D"]
+position = Vector2(0, -161)
+
+[node name="FondoBosque" type="Sprite2D" parent="."]
+position = Vector2(651.5, 318.25)
+scale = Vector2(2.68511, 2.98984)
+texture = ExtResource("1_vhjmk")
+
+[node name="planoMedio" type="Sprite2D" parent="."]
+position = Vector2(176, 376)
+scale = Vector2(0.930263, 1.87423)
+texture = ExtResource("2_hppyo")
+
+[node name="planoMedio" type="Sprite2D" parent="planoMedio"]
+position = Vector2(511.111, -0.00574446)
+scale = Vector2(1.17, 1.02314)
+texture = ExtResource("2_hppyo")
+
+[node name="planoMedio2" type="Sprite2D" parent="planoMedio"]
+position = Vector2(1008.55, -1.29762)
+scale = Vector2(0.926727, 1.02585)
+texture = ExtResource("2_hppyo")
+
+[node name="planoMedio3" type="Sprite2D" parent="planoMedio"]
+position = Vector2(518.133, 130.721)
+scale = Vector2(2.98551, 1.51314)
+texture = ExtResource("3_t5y7p")
+
+[node name="primerPlano" type="Sprite2D" parent="."]
+position = Vector2(617, 731)
+scale = Vector2(81.2622, 21.2749)
+texture = ExtResource("4_ok8r0")
+
+[node name="primerPlano" type="Sprite2D" parent="primerPlano"]
+position = Vector2(-6.27598, -0.235017)
+scale = Vector2(0.0517475, 0.195231)
+texture = ExtResource("4_wg0iv")
+
+[node name="Enemigo" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemigo"]
+position = Vector2(1032, 514)
+scale = Vector2(4.84374, 4.53788)
+sprite_frames = SubResource("SpriteFrames_imcy2")
+animation = &"Normal"
+autoplay = "Normal"
+frame_progress = 0.123378
+
+[node name="prota" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="prota"]
+position = Vector2(96.9999, 511)
+scale = Vector2(0.348388, 0.316821)
+sprite_frames = SubResource("SpriteFrames_f7a5t")
+animation = &"Normal"
+autoplay = "Normal"
+frame_progress = 0.330157
