@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfd3naw2lmwer"
-path="res://.godot/imported/1_ Trees Background.png-b8e786cf77dc9f39ead33e88ae1a3472.ctex"
+uid="uid://cikteh4a6820s"
+path="res://.godot/imported/openBook.png-06e42f959e30637b4a83476c865cf501.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://1. Parallax/1_ Trees Background.png"
-dest_files=["res://.godot/imported/1_ Trees Background.png-b8e786cf77dc9f39ead33e88ae1a3472.ctex"]
+source_file="res://assets/sprites/BookPack/openBook.png"
+dest_files=["res://.godot/imported/openBook.png-06e42f959e30637b4a83476c865cf501.ctex"]
 
 [params]
 

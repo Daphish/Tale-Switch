@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5udovkxhif4d"
-path="res://.godot/imported/Attack.png-b41ac030f956f9c3dd32296f796afbaf.ctex"
+uid="uid://derne5w03vkwx"
+path="res://.godot/imported/3_ Trees.png-1687bd0f316eb679e48e4353e9a98d90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CharacterAnimations/Attack.png"
-dest_files=["res://.godot/imported/Attack.png-b41ac030f956f9c3dd32296f796afbaf.ctex"]
+source_file="res://assets/sprites/1. Parallax/3_ Trees.png"
+dest_files=["res://.godot/imported/3_ Trees.png-1687bd0f316eb679e48e4353e9a98d90.ctex"]
 
 [params]
 

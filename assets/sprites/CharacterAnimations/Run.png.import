@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnb6ex56xoxc7"
-path="res://.godot/imported/cuaadro negro.png-62c6868cbe615eb3ea9b0b030315296b.ctex"
+uid="uid://lqov4jmocy77"
+path="res://.godot/imported/Run.png-be0afbf1d845b20b3ce8894ab88a7f8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BookPack/cuaadro negro.png"
-dest_files=["res://.godot/imported/cuaadro negro.png-62c6868cbe615eb3ea9b0b030315296b.ctex"]
+source_file="res://assets/sprites/CharacterAnimations/Run.png"
+dest_files=["res://.godot/imported/Run.png-be0afbf1d845b20b3ce8894ab88a7f8b.ctex"]
 
 [params]
 
