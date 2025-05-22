@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7y4jh2jn5ctl"
-path="res://.godot/imported/Idle.png-e8f76740c7d74897cb74736d192282ce.ctex"
+uid="uid://djetug1da1iyh"
+path="res://.godot/imported/4_ Trees.png-02b261d92491bb094f5e9e50522a0309.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CharacterAnimations/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-e8f76740c7d74897cb74736d192282ce.ctex"]
+source_file="res://assets/sprites/1. Parallax/4_ Trees.png"
+dest_files=["res://.godot/imported/4_ Trees.png-02b261d92491bb094f5e9e50522a0309.ctex"]
 
 [params]
 

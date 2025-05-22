@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b188nyapursqb"
-path="res://.godot/imported/Happy.png-7ac4dea22c6007b4c3bbb3266f47079b.ctex"
+uid="uid://blrklikgwdbwx"
+path="res://.godot/imported/Walk.png-f6c68d2d27ecd78bf613159f6d99a4c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CharacterAnimations/Happy.png"
-dest_files=["res://.godot/imported/Happy.png-7ac4dea22c6007b4c3bbb3266f47079b.ctex"]
+source_file="res://assets/sprites/CharacterAnimations/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-f6c68d2d27ecd78bf613159f6d99a4c2.ctex"]
 
 [params]
 

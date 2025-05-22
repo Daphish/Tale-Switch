@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wcyyxrgmiy32"
-path="res://.godot/imported/5_ Floor Platform.png-ba0473434e5de4b6fbf9ca95b2a35198.ctex"
+uid="uid://5bjm46wg3qlu"
+path="res://.godot/imported/Die.png-3f5824e911578061f7c661745525f3d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://1. Parallax/5_ Floor Platform.png"
-dest_files=["res://.godot/imported/5_ Floor Platform.png-ba0473434e5de4b6fbf9ca95b2a35198.ctex"]
+source_file="res://assets/sprites/CharacterAnimations/Die.png"
+dest_files=["res://.godot/imported/Die.png-3f5824e911578061f7c661745525f3d5.ctex"]
 
 [params]
 

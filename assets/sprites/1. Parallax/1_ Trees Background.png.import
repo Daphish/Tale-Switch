@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bldmuht60tk0e"
-path="res://.godot/imported/RecieveDamage.png-81f7673493eb1abf8c85ace12a60802d.ctex"
+uid="uid://dfd3naw2lmwer"
+path="res://.godot/imported/1_ Trees Background.png-27700b02b3c578259b34f15f152cf354.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CharacterAnimations/RecieveDamage.png"
-dest_files=["res://.godot/imported/RecieveDamage.png-81f7673493eb1abf8c85ace12a60802d.ctex"]
+source_file="res://assets/sprites/1. Parallax/1_ Trees Background.png"
+dest_files=["res://.godot/imported/1_ Trees Background.png-27700b02b3c578259b34f15f152cf354.ctex"]
 
 [params]
 

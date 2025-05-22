@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djetug1da1iyh"
-path="res://.godot/imported/4_ Trees.png-666e7ef1155323a4b48fe8b656623bf4.ctex"
+uid="uid://ujwe6s4r554e"
+path="res://.godot/imported/cuadro Blanco.png-744b79d348d6525addfdf218a8f7887f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://1. Parallax/4_ Trees.png"
-dest_files=["res://.godot/imported/4_ Trees.png-666e7ef1155323a4b48fe8b656623bf4.ctex"]
+source_file="res://assets/sprites/BookPack/cuadro Blanco.png"
+dest_files=["res://.godot/imported/cuadro Blanco.png-744b79d348d6525addfdf218a8f7887f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cikteh4a6820s"
-path="res://.godot/imported/openBook.png-5110e3cc71e4dba3d911cefd2efbc40a.ctex"
+uid="uid://y5m7w312ua4w"
+path="res://.godot/imported/books_byBatuhan.png-82f19484354051b82374e1f1ba909769.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BookPack/openBook.png"
-dest_files=["res://.godot/imported/openBook.png-5110e3cc71e4dba3d911cefd2efbc40a.ctex"]
+source_file="res://assets/sprites/BookPack/books_byBatuhan.png"
+dest_files=["res://.godot/imported/books_byBatuhan.png-82f19484354051b82374e1f1ba909769.ctex"]
 
 [params]
 
