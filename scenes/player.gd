@@ -8,7 +8,7 @@ func _ready():
 func _physics_process(delta):
 	_player_actions(delta)
 
-func _player_actions(delta):
+func _player_actions(_delta):
 	if Input.is_action_just_pressed("attack_player"):
 		animated_sprite.play("attack")
 	if Input.is_action_just_pressed("receive_damage_player"):
