@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2pci8ky3lcnp"]
+
+[ext_resource type="Script" uid="uid://b7prr6608k2xn" path="res://scenes/projectile.gd" id="1_q3m7n"]
+[ext_resource type="Texture2D" uid="uid://cikteh4a6820s" path="res://assets/sprites/BookPack/openBook.png" id="2_sxmqc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgwo2"]
+atlas = ExtResource("2_sxmqc")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxmqc"]
+atlas = ExtResource("2_sxmqc")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xblw"]
+atlas = ExtResource("2_sxmqc")
+region = Rect2(64, 192, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dac07"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgwo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxmqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xblw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Projectile" type="Node2D"]
+script = ExtResource("1_q3m7n")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dac07")
+frame_progress = 0.0271167
