@@ -9,7 +9,7 @@ func _ready():
 
 
 
-func _process(delta):
+func _process(_delta):
 	if not input.has_focus():
 		input.grab_focus()
 
@@ -22,9 +22,14 @@ func _process(delta):
 			spawner.current_word_node.queue_free()
 			projectiles.spawn_projectile("enemy")
 		else:
+			$"/root/lvl1/wrong".play()
 			projectiles.spawn_projectile("player")
 			
 	call_deferred("_restore_focus")
 	
 func _restore_focus():
 	input.grab_focus()
+
+
+func _on_timer_timeout() -> void:
+	projectiles.spawn_projectile("player")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2pci8ky3lcnp"]
+[gd_scene load_steps=8 format=3 uid="uid://d2pci8ky3lcnp"]
 
 [ext_resource type="Script" uid="uid://b7prr6608k2xn" path="res://scenes/projectile.gd" id="1_q3m7n"]
 [ext_resource type="Texture2D" uid="uid://cikteh4a6820s" path="res://assets/sprites/BookPack/openBook.png" id="2_sxmqc"]
@@ -32,9 +32,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Projectile" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3m7n"]
+size = Vector2(19, 27)
+
+[node name="Projectile" type="Area2D"]
 script = ExtResource("1_q3m7n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_dac07")
+autoplay = "default"
 frame_progress = 0.0271167
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_q3m7n")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

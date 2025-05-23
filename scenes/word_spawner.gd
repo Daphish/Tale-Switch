@@ -29,15 +29,17 @@ func spawn_word():
 
 
 	current_word_node.connect("word_missed", Callable(self, "_on_word_missed"))
-	current_word_node.connect("word_guessed", Callable(self, "_on_word_guessed"))  # <- nuevo
+	current_word_node.connect("word_guessed", Callable(self, "_on_word_guessed"))
 
 	add_child(current_word_node)
 
-func _on_word_missed(word):
+func _on_word_missed(_word):
+	$"/root/lvl1/wrong".play()
 	get_tree().call_group("projectiles", "launch_at_player")
-	spawn_word()  # 👈 genera una nueva palabra al fallar
+	spawn_word()
 	
 
-func _on_word_guessed(word):
+func _on_word_guessed(_word):
+	$"/root/lvl1/bell".play()
 	get_tree().call_group("projectiles", "launch_at_enemy")
-	call_deferred("spawn_word")  # ✅ Espera hasta que todo lo demás termine
+	call_deferred("spawn_word")
