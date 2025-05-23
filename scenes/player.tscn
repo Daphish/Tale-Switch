@@ -1,9 +1,32 @@
 [gd_scene load_steps=19 format=3 uid="uid://c8502e66q0se6"]
 
 [ext_resource type="Texture2D" uid="uid://c7y4jh2jn5ctl" path="res://assets/sprites/CharacterAnimations/Idle.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://ctb7wt4rc42yk" path="res://scenes/player.gd" id="1_dqkch"]
 [ext_resource type="Texture2D" uid="uid://c5udovkxhif4d" path="res://assets/sprites/CharacterAnimations/Attack.png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://bldmuht60tk0e" path="res://assets/sprites/CharacterAnimations/RecieveDamage.png" id="4_tuyoq"]
+
+[sub_resource type="GDScript" id="GDScript_qhqgy"]
+script/source = "extends CharacterBody2D
+
+@onready var animated_sprite = $AnimatedSprite2D
+
+func _ready():
+	animated_sprite.connect(\"animation_finished\", _on_animation_finished)
+
+func _physics_process(delta):
+	_player_actions(delta)
+
+func _player_actions(_delta):
+	if Input.is_action_just_pressed(\"attack_player\"):
+		animated_sprite.play(\"attack\")
+	if Input.is_action_just_pressed(\"receive_damage_player\"):
+		animated_sprite.play(\"receive-damage\")
+
+func _on_animation_finished():
+	if animated_sprite.animation == \"attack\":
+		animated_sprite.play(\"idle\")
+	if animated_sprite.animation == \"receive-damage\":
+		animated_sprite.play(\"idle\")
+"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
 atlas = ExtResource("2_qlg0r")
@@ -111,7 +134,7 @@ animations = [{
 size = Vector2(79, 148)
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_dqkch")
+script = SubResource("GDScript_qhqgy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.4, 0.4)
