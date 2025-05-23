@@ -1,0 +1,143 @@
+[gd_scene load_steps=12 format=3 uid="uid://b6q62stfhe2jl"]
+
+[ext_resource type="Texture2D" uid="uid://7npvq83ui6v4" path="res://assets/sprites/book background2.png" id="1_gnr43"]
+[ext_resource type="Script" uid="uid://bh340q3ld3io3" path="res://scenes/story_screen_1.gd" id="1_jmc8c"]
+[ext_resource type="FontFile" uid="uid://c3se4ipau7avf" path="res://assets/fonts/VCR_OSD_MONO_1.001.ttf" id="2_rasv8"]
+[ext_resource type="Texture2D" uid="uid://b188nyapursqb" path="res://assets/sprites/CharacterAnimations/Happy.png" id="3_rasv8"]
+[ext_resource type="FontFile" uid="uid://cldqqkbxc8s6q" path="res://assets/fonts/Pixellari.ttf" id="4_682ev"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_682ev"]
+atlas = ExtResource("3_rasv8")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8yvol"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_682ev")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8yvol"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17uu3"]
+bg_color = Color(0.857636, 0.538582, 0.151856, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.831373, 0.341176, 0.25098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.627451)
+shadow_size = 15
+shadow_offset = Vector2(0, 2.395)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67gri"]
+bg_color = Color(0.737306, 0.455064, 0.101152, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.831373, 0.341176, 0.25098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.627451)
+shadow_size = 15
+shadow_offset = Vector2(0, 2.395)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8xam"]
+bg_color = Color(0.956863, 0.631373, 0.270588, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.831373, 0.341176, 0.25098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.627451)
+shadow_size = 15
+shadow_offset = Vector2(0, 2.395)
+
+[node name="story_screen1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jmc8c")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -209.0
+offset_top = -96.0
+offset_right = 196.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_gnr43")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 49.0
+offset_right = 552.0
+offset_bottom = 344.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_rasv8")
+theme_override_font_sizes/font_size = 32
+text = "Había una vez, en una biblioteca de una pequeña ciudad de México, un pequeño guardián, salvaguarda de los libros, muy curioso y valiente, con el poder de adentrarse físicamente en las historias que protegía."
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 599.0
+offset_top = 49.0
+offset_right = 1094.0
+offset_bottom = 344.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_rasv8")
+theme_override_font_sizes/font_size = 32
+text = "Todos los días, nuestro pequeño héroe cuidaba que la gente no dañara los libros del lugar, haciendo un trabajo impecable.
+
+Un día ocurrió algo inesperado; al parecer, la paz y la felicidad no podían durar para siempre..."
+autowrap_mode = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(284, 483)
+scale = Vector2(0.420898, 0.464844)
+sprite_frames = SubResource("SpriteFrames_8yvol")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 823.0
+offset_top = 526.0
+offset_right = 1064.0
+offset_bottom = 594.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_682ev")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8yvol")
+theme_override_styles/hover = SubResource("StyleBoxFlat_17uu3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_67gri")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r8xam")
+text = "Continuar"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
