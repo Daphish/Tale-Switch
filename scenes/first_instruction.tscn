@@ -1,0 +1,140 @@
+[gd_scene load_steps=12 format=3 uid="uid://dcoeed4iwbhwx"]
+
+[ext_resource type="Texture2D" uid="uid://c41gcdjn42wfh" path="res://assets/sprites/Logo.png" id="1_23eg0"]
+[ext_resource type="Script" uid="uid://cmgp8lhmyj30x" path="res://scenes/first_instruction.gd" id="1_jq12b"]
+[ext_resource type="FontFile" uid="uid://cldqqkbxc8s6q" path="res://assets/fonts/Pixellari.ttf" id="2_6er0c"]
+[ext_resource type="FontFile" uid="uid://c3se4ipau7avf" path="res://assets/fonts/VCR_OSD_MONO_1.001.ttf" id="3_jq12b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aglk8"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6er0c"]
+texture = ExtResource("1_23eg0")
+modulate_color = Color(1, 1, 1, 0.0980392)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5vjsf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xe53t"]
+bg_color = Color(0.857636, 0.538582, 0.151856, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.831373, 0.341176, 0.25098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.627451)
+shadow_size = 15
+shadow_offset = Vector2(0, 2.395)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3kvkk"]
+bg_color = Color(0.737306, 0.455064, 0.101152, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.831373, 0.341176, 0.25098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.627451)
+shadow_size = 15
+shadow_offset = Vector2(0, 2.395)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6haeo"]
+bg_color = Color(0.956863, 0.631373, 0.270588, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.831373, 0.341176, 0.25098, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.627451)
+shadow_size = 15
+shadow_offset = Vector2(0, 2.395)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6er0c"]
+bg_color = Color(1, 1, 1, 0.219608)
+
+[node name="first_instruction" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jq12b")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_aglk8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6er0c")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.5
+offset_top = 191.0
+offset_right = 120.5
+offset_bottom = 259.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_6er0c")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5vjsf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xe53t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3kvkk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6haeo")
+text = "Continuar"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -178.0
+offset_right = 375.0
+offset_bottom = 131.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jq12b")
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_6er0c")
+text = "Para jugar, usa \"w\" o \"s\" para mover la canasta de la parte inferior de la pantalla. Recoge los objetos relacionados para hacer daño al enemigo. Si recoges un objeto que no sea relacionado, el enemigo te hará daño a ti. Puedes usar las flechas de arriba y abajo también."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
