@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://07qmwmy5ld11" path="res://scenes/enemy.tscn" id="7_mvjca"]
 
 [node name="lvl1" type="Node2D"]
+visible = false
 
 [node name="FondoBosque" type="Sprite2D" parent="."]
 position = Vector2(651.5, 318.25)
