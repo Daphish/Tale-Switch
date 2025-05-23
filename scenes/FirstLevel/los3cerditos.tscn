@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=3 uid="uid://duo1kmtxq14rj"]
+
+[ext_resource type="Texture2D" uid="uid://cqjjxumvab5j6" path="res://assets/sprites/fondo cerditos.png" id="1_vsct0"]
+[ext_resource type="Script" uid="uid://blgnop0wuytmt" path="res://scenes/FirstLevel/spawner.gd" id="2_7ajbp"]
+[ext_resource type="PackedScene" uid="uid://4iotqdv0mnm7" path="res://scenes/piggy.tscn" id="3_ti2l5"]
+[ext_resource type="PackedScene" uid="uid://8k7whbg7ld50" path="res://scenes/FirstLevel/area_2d.tscn" id="4_4cc7v"]
+[ext_resource type="Script" uid="uid://bocxvyah4merg" path="res://scenes/piggy.gd" id="5_0n2k7"]
+[ext_resource type="Script" uid="uid://cguawft4vfjhv" path="res://scenes/FirstLevel/brick.gd" id="6_0glbp"]
+[ext_resource type="PackedScene" uid="uid://b7c6upkvxm7gb" path="res://scenes/FirstLevel/playerCerditos.tscn" id="7_gt1rw"]
+[ext_resource type="Script" uid="uid://df18qpq1ft2vb" path="res://scenes/FirstLevel/player_cerditos.gd" id="8_bi2fh"]
+
+[node name="Los3Cerditos" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Fondo" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo"]
+position = Vector2(0.999959, 2.49998)
+scale = Vector2(0.763021, 0.657227)
+texture = ExtResource("1_vsct0")
+
+[node name="Spawner" type="Node2D" parent="."]
+script = ExtResource("2_7ajbp")
+piggy_scene = ExtResource("3_ti2l5")
+obstacle_scene = ExtResource("4_4cc7v")
+
+[node name="ItemContainer" type="Node2D" parent="."]
+
+[node name="Piggy" parent="." instance=ExtResource("3_ti2l5")]
+position = Vector2(736, -268)
+script = ExtResource("5_0n2k7")
+
+[node name="Brick" parent="." instance=ExtResource("4_4cc7v")]
+position = Vector2(742, -141)
+script = ExtResource("6_0glbp")
+
+[node name="Player" parent="." instance=ExtResource("7_gt1rw")]
+position = Vector2(-512, 151)
+scale = Vector2(0.401638, 0.398202)
+script = ExtResource("8_bi2fh")
