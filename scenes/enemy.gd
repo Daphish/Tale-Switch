@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var health_bar = $HealthBar
-var hp = 100
+var hp = 10
 
 func _ready():
 	animated_sprite.connect("animation_finished", _on_animation_finished)

@@ -113,7 +113,7 @@ offset_bottom = 344.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_hamvg")
 theme_override_font_sizes/font_size = 32
-text = "¿Un misterioso ser encapuchado? Al ver esto, el guardián corrió hacia él, pero el encapuchado entró a uno de los cuentos antes de ser atrapado. Al parecer, el guardián era el único con ese poder.
+text = "¿Un misterioso ser encapuchado? Al ver esto, el guardián corrió hacia él, pero el encapuchado entró a uno de los cuentos antes de ser atrapado. Al parecer, el guardián no era el único con ese poder.
 
 Sin importar qué, el encapuchado debe ser detenido."
 autowrap_mode = 2

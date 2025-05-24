@@ -3,7 +3,7 @@ extends AudioStreamPlayer2D
 const interface_music = preload("res://assets/music/TaleSwitchInterfaces.mp3")
 
 func _play_music(music: AudioStream, volume = 0.0):
-	if stream == music:
+	if stream == music and is_playing():
 		return
 	
 	stream = music
