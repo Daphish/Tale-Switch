@@ -1,7 +1,7 @@
 extends Node2D
 
 func spawn_projectile(target: String):
-	var proj = preload("res://scenes/Projectile.tscn").instantiate()
+	var proj = preload("res://scenes/projectile.tscn").instantiate()
 	var offset = Vector2(100, 0)
 
 	if target == "enemy":

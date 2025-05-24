@@ -45,13 +45,13 @@ func hit_obs(body, obstacle):
 			body.hp -= 10
 			body.health_bar.value = body.hp
 			if body.hp <= 0:
-				get_tree().change_scene_to_file("res://scenes/game_over1.tscn")
+				get_tree().call_deferred("change_scene_to_file", "res://scenes/game_over1.tscn")
 			else:
 				$Wrong.play()
 		elif obstacle.type == "piggy":
 			cerditos += 1
-			if cerditos >= 20:
-				get_tree().change_scene_to_file("res://scenes/second_instruction.tscn")
+			if cerditos >= 15:
+				get_tree().call_deferred("change_scene_to_file", "res://scenes/second_instruction.tscn")
 			else:
 				$Bell.play()
 		

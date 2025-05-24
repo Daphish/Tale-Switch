@@ -13,7 +13,7 @@ config_version=5
 config/name="TaleSwitch"
 run/main_scene="uid://dct12r1dtkpgw"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://d0sfrwpsv33yk"
 
 [autoload]
 

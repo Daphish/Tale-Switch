@@ -132,7 +132,7 @@ keep_editing_on_text_submit = true
 position = Vector2(-472, -306)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 6.0
+wait_time = 5.5
 autostart = true
 
 [node name="bell" type="AudioStreamPlayer2D" parent="."]
