@@ -50,7 +50,7 @@ func hit_obs(body, obstacle):
 				$Wrong.play()
 		elif obstacle.type == "piggy":
 			cerditos += 1
-			if cerditos >= 1:
+			if cerditos >= 15:
 				get_tree().call_deferred("change_scene_to_file", "res://scenes/second_instruction.tscn")
 			else:
 				$Bell.play()
