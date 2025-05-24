@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://8k7whbg7ld50"]
 
-[ext_resource type="Script" path="res://scenes/FirstLevel/area_2d.gd" id="1_kijg3"]
+[ext_resource type="Script" uid="uid://do7u1wcqw8l3v" path="res://scenes/FirstLevel/area_2d.gd" id="1_kijg3"]
 [ext_resource type="Texture2D" uid="uid://b7glq337a4neq" path="res://assets/sprites/ladrillo.png" id="1_ynrus"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynrus"]
