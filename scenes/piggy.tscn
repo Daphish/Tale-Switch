@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://4iotqdv0mnm7"]
+[gd_scene load_steps=10 format=3 uid="uid://4iotqdv0mnm7"]
 
 [ext_resource type="Texture2D" uid="uid://dct78pr3y1jqu" path="res://assets/sprites/piggy_sheet.png" id="1_00wcf"]
+[ext_resource type="Script" uid="uid://bocxvyah4merg" path="res://scenes/piggy.gd" id="1_am0m5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_am0m5"]
 atlas = ExtResource("1_00wcf")
@@ -49,6 +50,8 @@ animations = [{
 size = Vector2(86, 81.5)
 
 [node name="Piggy" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_am0m5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -40)

@@ -1,37 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7c6upkvxm7gb"]
+[gd_scene load_steps=4 format=3 uid="uid://b7c6upkvxm7gb"]
 
-[ext_resource type="Texture2D" uid="uid://c7y4jh2jn5ctl" path="res://assets/sprites/CharacterAnimations/Idle.png" id="1_lkv6q"]
+[ext_resource type="Script" uid="uid://df18qpq1ft2vb" path="res://scenes/FirstLevel/player_cerditos.gd" id="1_lkv6q"]
 [ext_resource type="Texture2D" uid="uid://dlquljpbpcm1i" path="res://assets/sprites/Cofre.png" id="2_8q3lr"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uwuuv"]
-atlas = ExtResource("1_lkv6q")
-region = Rect2(0, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hjlbb"]
-atlas = ExtResource("1_lkv6q")
-region = Rect2(512, 0, 512, 512)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_gxm2c"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uwuuv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hjlbb")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ooqps"]
 size = Vector2(142, 136)
 
 [node name="Player" type="CharacterBody2D"]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_gxm2c")
+collision_mask = 2
+script = ExtResource("1_lkv6q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(159, 69)

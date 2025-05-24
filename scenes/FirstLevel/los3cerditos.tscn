@@ -1,13 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://duo1kmtxq14rj"]
+[gd_scene load_steps=8 format=3 uid="uid://duo1kmtxq14rj"]
 
 [ext_resource type="Texture2D" uid="uid://cqjjxumvab5j6" path="res://assets/sprites/fondo cerditos.png" id="1_vsct0"]
 [ext_resource type="Script" uid="uid://blgnop0wuytmt" path="res://scenes/FirstLevel/spawner.gd" id="2_7ajbp"]
 [ext_resource type="PackedScene" uid="uid://4iotqdv0mnm7" path="res://scenes/piggy.tscn" id="3_ti2l5"]
 [ext_resource type="PackedScene" uid="uid://8k7whbg7ld50" path="res://scenes/FirstLevel/area_2d.tscn" id="4_4cc7v"]
-[ext_resource type="Script" uid="uid://bocxvyah4merg" path="res://scenes/piggy.gd" id="5_0n2k7"]
-[ext_resource type="Script" uid="uid://cguawft4vfjhv" path="res://scenes/FirstLevel/brick.gd" id="6_0glbp"]
 [ext_resource type="PackedScene" uid="uid://b7c6upkvxm7gb" path="res://scenes/FirstLevel/playerCerditos.tscn" id="7_gt1rw"]
-[ext_resource type="Script" uid="uid://df18qpq1ft2vb" path="res://scenes/FirstLevel/player_cerditos.gd" id="8_bi2fh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ajbp"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ti2l5"]
+bg_color = Color(0, 1, 0, 1)
 
 [node name="Los3Cerditos" type="Node2D"]
 
@@ -22,20 +25,30 @@ texture = ExtResource("1_vsct0")
 
 [node name="Spawner" type="Node2D" parent="."]
 script = ExtResource("2_7ajbp")
-piggy_scene = ExtResource("3_ti2l5")
-obstacle_scene = ExtResource("4_4cc7v")
 
 [node name="ItemContainer" type="Node2D" parent="."]
 
 [node name="Piggy" parent="." instance=ExtResource("3_ti2l5")]
-position = Vector2(736, -268)
-script = ExtResource("5_0n2k7")
+position = Vector2(-893, -202)
+is_cerdito = true
 
 [node name="Brick" parent="." instance=ExtResource("4_4cc7v")]
-position = Vector2(742, -141)
-script = ExtResource("6_0glbp")
+position = Vector2(-901, -51)
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -533.0
+offset_top = -302.0
+offset_right = 533.0
+offset_bottom = -239.0
+rotation = 0.000428081
+theme_override_styles/background = SubResource("StyleBoxFlat_7ajbp")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ti2l5")
+value = 50.0
+show_percentage = false
 
 [node name="Player" parent="." instance=ExtResource("7_gt1rw")]
-position = Vector2(-512, 151)
+position = Vector2(-576, -15)
 scale = Vector2(0.401638, 0.398202)
-script = ExtResource("8_bi2fh")
+
+[connection signal="area_entered" from="Piggy" to="Player" method="_on_piggy_area_entered"]
+[connection signal="area_entered" from="Brick" to="Player" method="_on_brick_area_entered"]
