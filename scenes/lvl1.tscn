@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://c8502e66q0se6" path="res://scenes/player.tscn" id="6_hp87r"]
 [ext_resource type="PackedScene" uid="uid://07qmwmy5ld11" path="res://scenes/enemy.tscn" id="7_mvjca"]
 [ext_resource type="Script" uid="uid://bw8ta2hjj412k" path="res://scenes/word_spawner.gd" id="8_kylad"]
-[ext_resource type="AudioStream" uid="uid://cmkeotnxankbx" path="res://assets/music/Level 1.mp3" id="8_mvjca"]
 [ext_resource type="Script" uid="uid://c2dsus8wi0c42" path="res://scenes/projectile_container.gd" id="9_28l0p"]
+[ext_resource type="AudioStream" uid="uid://cw5jqc2veocr7" path="res://assets/music/TaleSwitchLevel2.mp3" id="9_sh364"]
 [ext_resource type="Script" uid="uid://bivij3iqjhyl3" path="res://scenes/input_handler.gd" id="10_yq2hi"]
 [ext_resource type="PackedScene" uid="uid://d2pci8ky3lcnp" path="res://scenes/projectile.tscn" id="11_yq2hi"]
 [ext_resource type="PackedScene" uid="uid://yq1161uhvs8b" path="res://scenes/word_label.tscn" id="12_2tpkn"]
@@ -101,7 +101,7 @@ value = 50.0
 show_percentage = false
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_mvjca")
+stream = ExtResource("9_sh364")
 autoplay = true
 
 [node name="WordSpawner" type="Node2D" parent="."]

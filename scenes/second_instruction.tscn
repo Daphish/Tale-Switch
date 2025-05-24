@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://2jrcc5s0g7ye"]
+[gd_scene load_steps=13 format=3 uid="uid://2jrcc5s0g7ye"]
 
 [ext_resource type="Script" uid="uid://cdd2eitn4mx0t" path="res://scenes/second_instruction.gd" id="1_mp45b"]
 [ext_resource type="Texture2D" uid="uid://c41gcdjn42wfh" path="res://assets/sprites/Logo.png" id="2_8kahv"]
 [ext_resource type="FontFile" uid="uid://cldqqkbxc8s6q" path="res://assets/fonts/Pixellari.ttf" id="3_v0vkf"]
 [ext_resource type="FontFile" uid="uid://c3se4ipau7avf" path="res://assets/fonts/VCR_OSD_MONO_1.001.ttf" id="4_wx5vd"]
+[ext_resource type="AudioStream" uid="uid://dkamgs1di5pt" path="res://assets/music/TaleSwitchInterfaces.mp3" id="5_8kahv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aglk8"]
 bg_color = Color(1, 1, 1, 1)
@@ -140,5 +141,9 @@ Aparecerán palabras en la parte inferior que deberás de escribir correctamente
 ¡PREPARATE!"
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_8kahv")
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_continue_pressed"]

@@ -133,7 +133,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_jq12b")
 theme_override_font_sizes/font_size = 37
 theme_override_styles/normal = SubResource("StyleBoxFlat_6er0c")
-text = "Entraste a un cuento pero lo único que encontraste fue al lobo feroz haciendo de las suyas. Muévete con \"w\" y \"s\" para mover el cofre y salvar a 10 cerditos.
+text = "Entraste a un cuento pero lo único que encontraste fue al lobo feroz haciendo de las suyas. Muévete con \"w\" y \"s\" para mover el cofre y salvar a 20 cerditos. Puedes usar tambien las flechas del teclado.
 
 ¡Ten cuidado con los ladrillos!"
 horizontal_alignment = 1

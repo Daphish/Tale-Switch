@@ -4,7 +4,7 @@ signal word_missed(word: String)
 signal word_guessed(word: String)
 
 var word = ""
-var speed = 100
+var speed = 200
 
 func _ready():
 	if has_node("WordText"):

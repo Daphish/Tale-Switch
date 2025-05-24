@@ -2,10 +2,11 @@ extends Node2D
 
 @export var word_scene: PackedScene
 @export var word_list: Array[String] = [
-	"cuento", "libreria", "feria", "principe", "princesa",
+	"cuento", "libreria", "estante", "principe", "princesa",
 	"castillo", "dragon", "hechizo", "bosque", "aventura",
 	"hada", "espada", "bruja", "autor", "poesia",
-	"letras", "lectura", "pagina", "sabio", "pergamino"
+	"letras", "lectura", "pagina", "sabio", "pergamino", "lobo",
+	"caperuza", "fantasia", "caldero", "magia", "novela"
 ]
 
 var current_word_node: Node2D = null
