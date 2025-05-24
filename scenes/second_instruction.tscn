@@ -123,9 +123,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -375.0
-offset_top = -115.0
+offset_top = -253.0
 offset_right = 375.0
-offset_bottom = 115.0
+offset_bottom = 140.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -133,6 +133,12 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_wx5vd")
 theme_override_font_sizes/font_size = 37
 theme_override_styles/normal = SubResource("StyleBoxFlat_6er0c")
-text = "Ahora aparecerán palabras en la parte inferior. Escribe las palabras y luego da \"enter\" para hacer daño al enemigo. Si la palabra está mal escrita, el enemigo te hará daño."
+text = "Tras salvar a los cerditos, entraste a otro cuento y te encontraste al encapuchado.
+
+Aparecerán palabras en la parte inferior que deberás de escribir correctamente para hacerle daño. Si escribes mal, él te hará daño a tí.
+
+¡PREPARATE!"
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_continue_pressed"]

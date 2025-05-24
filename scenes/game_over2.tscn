@@ -187,4 +187,5 @@ text = "Salir"
 stream = ExtResource("5_yxkq8")
 autoplay = true
 
+[connection signal="pressed" from="Button" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_exit_pressed"]

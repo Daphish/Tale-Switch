@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var type = "brick"
+@export var type = "piggy"
 var speed = 600
 
 # Called when the node enters the scene tree for the first time.

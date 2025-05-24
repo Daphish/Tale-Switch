@@ -133,7 +133,9 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_jq12b")
 theme_override_font_sizes/font_size = 37
 theme_override_styles/normal = SubResource("StyleBoxFlat_6er0c")
-text = "Para jugar, usa \"w\" o \"s\" para mover la canasta de la parte inferior de la pantalla. Recoge los objetos relacionados para hacer daño al enemigo. Si recoges un objeto que no sea relacionado, el enemigo te hará daño a ti. Puedes usar las flechas de arriba y abajo también."
+text = "Entraste a un cuento pero lo único que encontraste fue al lobo feroz haciendo de las suyas. Muévete con \"w\" y \"s\" para mover el cofre y salvar a 10 cerditos.
+
+¡Ten cuidado con los ladrillos!"
 horizontal_alignment = 1
 autowrap_mode = 2
 

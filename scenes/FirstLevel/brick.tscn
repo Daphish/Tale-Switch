@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://kb7qijtg2nx7"]
+
+[ext_resource type="Texture2D" uid="uid://b7glq337a4neq" path="res://assets/sprites/ladrillo.png" id="1_6jhit"]
+[ext_resource type="Script" uid="uid://b5mh0ce5x1tip" path="res://scenes/FirstLevel/brick.gd" id="1_a6e4p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6e4p"]
+size = Vector2(30, 16)
+
+[node name="brick" type="Area2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_a6e4p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6jhit")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_a6e4p")
