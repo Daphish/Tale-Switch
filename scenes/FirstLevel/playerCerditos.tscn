@@ -10,12 +10,23 @@ size = Vector2(142, 136)
 collision_mask = 2
 script = ExtResource("1_lkv6q")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(159, 69)
-shape = SubResource("RectangleShape2D_ooqps")
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(151, 62)
 rotation = -0.837758
-scale = Vector2(10.4531, 10.1719)
+scale = Vector2(20, 19.462)
 texture = ExtResource("2_8q3lr")
+
+[node name="Detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
+position = Vector2(159, 69)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_ooqps")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(159, 69)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_ooqps")
+
+[connection signal="area_entered" from="Detector" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="Detector" to="." method="_on_detector_area_entered"]

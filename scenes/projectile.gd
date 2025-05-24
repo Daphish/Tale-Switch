@@ -11,7 +11,7 @@ func _physics_process(delta):
 func _move_toward_target(delta):
 	if target and is_instance_valid(target):
 		var dir = (target.global_position - global_position).normalized()
-		position += dir * speed * delta
+		position += dir * speed * delta	
 	
 
 
